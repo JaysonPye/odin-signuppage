@@ -7,8 +7,46 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>Odin</header>
-    <main></main>
+    <header></header>
+    <main>
+      <div id="left">
+        <div id="overlay">
+          <img src="logo.png" />
+          <p>ODIN</p>
+        </div>
+        <img src="splash.jpg" />
+      </div>
+      <div id="right">
+        <h1>
+          This is not a real online service! You know you need something like
+          this in your life to help you realize your deepest dreams.<br />
+          Sign up <em>now</em> to get started.<br /><br />
+          You <em>know</em> you want to.
+        </h1>
+
+        <form action="#">
+          <div class="title">Let's do this!</div>
+          <fieldset id="name">
+            <label for="first-name">First Name</label>
+            <input type="text" id="first-name" name="first_name" />
+            <label for="last-name">Last Name</label>
+            <input type="text" id="last-name" name="last_name" />
+          </fieldset>
+          <label for="email">EMAIL</label>
+          <input type="email" id="email" name="email" />
+          <label for="phone">PHONE NUMBER</label>
+          <input type="tel" id="phone" name="phone" />
+          <fieldset id="password">
+            <label for="password">PASSWORD</label>
+            <input type="password" id="password" name="password" />
+            <label for="confirm-password">CONFIRM PASSWORD</label>
+            <input type="password" id="password" name="confirm_password" />
+          </fieldset>
+          <button type="submit">Create Account</button>
+        </form>
+        <div>Already have an account? <a href="google.com">Log In</a></div>
+      </div>
+    </main>
     <footer></footer>
   </body>
 </html>
