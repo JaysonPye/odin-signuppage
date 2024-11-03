@@ -4,31 +4,39 @@
   font-weight: normal;
   font-style: normal;
 }
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 fieldset {
   padding: 0;
   border: none;
 }
 main {
+  background-color: #f7f7f7;
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
 }
 #left {
   position: relative;
   justify-content: center;
   align-items: center;
-  max-width: 30vw;
+  max-width: 40vw;
   display: flex;
+  height: 100vh;
 }
 #left img {
   max-width: 100%;
-  height: auto;
+  height: 100%;
 }
 #overlay {
   font-family: "NorseBold", sans-serif;
-  font-size: 3rem;
   color: white;
+  font-size: 5rem;
   display: flex;
   width: 100%;
   justify-content: center;
@@ -40,9 +48,82 @@ main {
   transform: translate(-50%, -50%);
   background-color: rgba(0, 0, 0, 0.5);
 }
+#reference {
+  display: flex;
+  color: white;
+  justify-content: center;
+  position: absolute;
+  bottom: 5vh;
+}
 #overlay img {
   max-height: 15vh;
 }
 #right {
-  max-width: 70vw;
+  width: 70vw;
+  height: 100vh;
+}
+h1 {
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  max-width: 70%;
+  font-size: 1.7rem;
+  padding-left: 5vw;
+}
+h2 {
+  grid-column: span 2;
+  padding-bottom: 25px;
+}
+#form-box {
+  gap: 20px;
+  box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.25);
+  padding-left: 5vw;
+  background-color: white;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  width: 100%;
+}
+.form-inputs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: start;
+  gap: 20px;
+  column-gap: 60px;
+  width: 50%;
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+input {
+  border-radius: 5px;
+  height: 30px;
+  border: 2px solid #e5e7eb;
+}
+input:focus {
+  outline: none;
+  border: 2px solid lightblue;
+}
+input[type="password"]:invalid {
+  border: 2px solid red;
+}
+a {
+  color: #596d48;
+  text-decoration: none;
+}
+button {
+  border: none;
+  margin-top: 25px;
+  font-weight: bold;
+  font-size: 1rem;
+  margin-left: 5vw;
+  padding: 10px 30px;
+  background-color: #596d48;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 5px 2px 2px rgba(0, 0, 0, 0.15);
+}
+#account {
+  margin-top: 25px;
+  margin-left: 5vw;
 }
